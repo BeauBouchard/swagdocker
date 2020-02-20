@@ -1,0 +1,8 @@
+version: '3'
+services:
+  swagdocker:
+    container_name: swagdocker
+    build: .
+    command: ["npm", "run-script", "start"]
+    volumes:
+      - ${PWD}:/usr/src/app
